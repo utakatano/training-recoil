@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react'
-import { Route } from 'react-router-dom'
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 import { pageConfig } from './pageConfig'
 
-export const Routes: React.FC = () => {
+export const PageRoutes: React.FC = () => {
   return (
-    <Fragment>
+    <Switch>
       {pageConfig.map(({id, path, component}) => (
         <Route key={id} path={path} component={component} exact />
       ))}
-    </Fragment>
+    </Switch>
   )
 }

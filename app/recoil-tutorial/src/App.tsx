@@ -1,8 +1,8 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
 import { Header } from './components/Header'
-import { Routes } from './pages/Routes'
+import { PageRoutes } from './pages/PageRoutes'
 
 export default function App() {
   return (
@@ -10,9 +10,7 @@ export default function App() {
       <RecoilRoot>
         <Header />
 
-        <Switch>
-          <Routes />
-        </Switch>
+        <PageRoutes />
       </RecoilRoot>
     </Router>
   )
