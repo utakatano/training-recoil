@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRecoilState } from 'recoil'
-import { TodoFilterProps, todoListFilterState } from '../../atoms/todoList'
+import { TodoFilterProps, todoListFilterState } from '../../state/atoms/todoList'
 
 interface FilterMenu {
   value: TodoFilterProps

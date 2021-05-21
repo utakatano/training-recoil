@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRecoilState } from 'recoil'
-import { TodoItemProps, todoListState } from '../../atoms/todoList'
+import { TodoItemProps, todoListState } from '../../state/atoms/todoList'
 
 interface Props {
   item: TodoItemProps
